@@ -1,0 +1,154 @@
+a{
+    text-decoration: none;
+
+}
+.top-bar span{
+    font-size: 14px !important;
+}
+.nav-link {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.6s ease;
+}
+
+.nav-link:hover {
+    border-bottom-color: rgb(255, 73, 73);
+}
+.dropdown-menu {
+    background: #111;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 13px;
+    padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+    background: #111;
+    color: rgb(254, 195, 195);
+}
+.text-light{
+    font-size: 14px !important;
+}
+.nn{
+    color: black !important;
+}
+.nav-link{
+    font-weight: 500 !important;
+}
+.btn-dark{
+    background-color: black !important;
+    color: white !important;
+}
+/* heroo== */
+.hero-bg-img{
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px; /* apni pasand ka height rakh lo */
+  display: flex;
+  align-items: center;
+}
+.sm{
+    font-size: 14px !important;
+}
+.arr{
+    font-size: 17px;
+    font-weight: 500;
+}
+.hero-icon a{
+    border: none;
+    background-color: rgb(172, 170, 170) !important;
+    color: rgb(249, 241, 241) !important;
+}
+.coll{
+    font-size: 16px;
+    color: black;
+    font-weight: 400 !important;
+}
+.head{
+    font-size: 34px ;
+    font-weight: 600 !important;
+    
+}
+.hero-bg-img .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hro-data {
+  height: 100%;
+  padding: 60px 0;
+}
+
+
+
+
+/* ================= */.banner__item {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.banner__item__pic {
+  float: right;
+  width: 65%;
+}
+
+.banner__item__pic img {
+  width: 100%;
+  display: block;
+}
+
+.banner__item__text {
+  padding-top: 40px;
+  margin-top: 50px;
+}
+
+.banner__item__text h2 {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.banner__item__text a {
+  color: #000;
+  border-bottom: 1px solid #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.col-lg-5 .banner__item__pic {
+  float: none;
+  width: 100%;
+}
+
+.col-lg-5 .banner__item__text {
+  padding-top: 15px;
+}
+
+
+@media (max-width: 991px) {
+  .banner__item {
+    overflow: visible;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .banner__item__pic {
+    float: none;      /* float hata diya */
+    width: 100%;       /* full width */
+  }
+
+  .banner__item__pic img {
+    width: 100%;
+  }
+
+  .banner__item__text {
+    padding-top: 15px; /* image ke neeche normal spacing */
+  }
+}
