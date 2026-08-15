@@ -80,7 +80,7 @@ a {
   font-weight: 500;
 }
 
-.hero-icon a {
+.hero-iconn a {
   border: none;
   background-color: rgb(172, 170, 170) !important;
   color: rgb(249, 241, 241) !important;
@@ -177,6 +177,7 @@ a {
 
   .banner__item__text {
     padding-top: 15px;
+    margin-top: 0;
     /* image ke neeche normal spacing */
   }
 }
@@ -212,6 +213,7 @@ a {
   transform: translateX(10px);
   transition: all 0.3s ease;
   z-index: 2;
+  border: none !important;
 }
 
 .cards-data:hover .hero-icon {
@@ -224,6 +226,9 @@ a {
   background-color: #fff !important;
   color: black !important;
   font-size: 17px !important;
+}
+.hero-icon a{
+  border: none !important;
 }
 
 .card-dataa {
@@ -313,6 +318,13 @@ font-weight: 600;
     color: white;
 
 
+}@media (max-width: 767px) {
+  .offeer {
+    right: 15px;
+    top: -30px;
+    height: 80px;
+    width: 80px;
+  }
 }
 .lsa{
   letter-spacing: 3px;
@@ -398,4 +410,52 @@ li{
 }
 #red{
   color: red;
+}
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* shop////================================= */
+/* ==== Sidebar ==== */
+.sidebar-widget .form-control {
+  border-right: none;
+  box-shadow: none;
+}
+.sidebar-widget .input-group-text {
+  border-left: none;
+  cursor: pointer;
+}
+.sidebar-widget .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.filter-title {
+  cursor: pointer;
+}
+
+.filter-title i {
+  transition: transform 0.3s ease;
+}
+
+.filter-title[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.filter-block ul li {
+  margin-bottom: 12px;
+}
+
+.filter-block ul li a {
+  color: #6c6c6c;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.filter-block ul li a:hover {
+  color: #e53637;
+}
+
+.filter-block ul li a span {
+  color: #9c9c9c;
 }
