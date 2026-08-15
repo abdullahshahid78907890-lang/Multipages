@@ -1,79 +1,103 @@
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 
 }
-.top-bar span{
-    font-size: 14px !important;
+.rating{
+  color: goldenrod;
+  font-size: 19px;
 }
+.lable {
+  top: 20px;
+  left: 0px;
+  z-index: 3;
+}
+
+.top-bar span {
+  font-size: 14px !important;
+}
+
 .nav-link {
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.6s ease;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.6s ease;
 }
 
 .nav-link:hover {
-    border-bottom-color: rgb(255, 73, 73);
+  border-bottom-color: rgb(255, 73, 73);
 }
+
 .dropdown-menu {
-    background: #111;
-    border: none;
-    border-radius: 0;
-    padding: 10px 0;
+  background: #111;
+  border: none;
+  border-radius: 0;
+  padding: 10px 0;
 }
 
 .dropdown-item {
-    color: white;
-    font-size: 13px;
-    padding: 8px 15px;
+  color: white;
+  font-size: 13px;
+  padding: 8px 15px;
 }
 
 .dropdown-item:hover {
-    background: #111;
-    color: rgb(254, 195, 195);
+  background: #111;
+  color: rgb(254, 195, 195);
 }
-.text-light{
-    font-size: 14px !important;
+
+.text-light {
+  font-size: 14px !important;
 }
-.nn{
-    color: black !important;
+
+.nn {
+  color: black !important;
 }
-.nav-link{
-    font-weight: 500 !important;
+
+.nav-link {
+  font-weight: 500 !important;
 }
-.btn-dark{
-    background-color: black !important;
-    color: white !important;
+
+.btn-dark {
+  background-color: black !important;
+  color: white !important;
 }
+
 /* heroo== */
-.hero-bg-img{
-     background-size: cover;
+.hero-bg-img {
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 700px; /* apni pasand ka height rakh lo */
+  min-height: 700px;
+  /* apni pasand ka height rakh lo */
   display: flex;
   align-items: center;
 }
-.sm{
-    font-size: 14px !important;
+
+.sm {
+  font-size: 14px !important;
 }
-.arr{
-    font-size: 17px;
-    font-weight: 500;
+
+.arr {
+  font-size: 17px;
+  font-weight: 500;
 }
-.hero-icon a{
-    border: none;
-    background-color: rgb(172, 170, 170) !important;
-    color: rgb(249, 241, 241) !important;
+
+.hero-icon a {
+  border: none;
+  background-color: rgb(172, 170, 170) !important;
+  color: rgb(249, 241, 241) !important;
 }
-.coll{
-    font-size: 16px;
-    color: black;
-    font-weight: 400 !important;
+
+.coll {
+  font-size: 16px;
+  color: black;
+  font-weight: 400 !important;
 }
-.head{
-    font-size: 34px ;
-    font-weight: 600 !important;
-    
+
+.head {
+  font-size: 34px;
+  font-weight: 600 !important;
+
 }
+
 .hero-bg-img .container {
   display: flex;
   align-items: center;
@@ -88,7 +112,8 @@ a{
 
 
 
-/* ================= */.banner__item {
+/* ================= */
+.banner__item {
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -140,8 +165,10 @@ a{
   }
 
   .banner__item__pic {
-    float: none;      /* float hata diya */
-    width: 100%;       /* full width */
+    float: none;
+    /* float hata diya */
+    width: 100%;
+    /* full width */
   }
 
   .banner__item__pic img {
@@ -149,6 +176,226 @@ a{
   }
 
   .banner__item__text {
-    padding-top: 15px; /* image ke neeche normal spacing */
+    padding-top: 15px;
+    /* image ke neeche normal spacing */
   }
+}
+
+.cards-data {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cards-data:hover .img img {
+  transform: scale(1.05);
+}
+
+/* icons — top right, hover pe hi show */
+.hero-icon {
+  top: 20px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.cards-data:hover .hero-icon {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.hero-icon .vf {
+  background-color: #fff !important;
+  color: black !important;
+  font-size: 17px !important;
+}
+
+.card-dataa {
+  padding-top: 12px;
+}
+
+/* Jogging Snakers <-> Add to cart swap, same jagah pe */
+.title-wrap {
+  min-height: 24px;
+}
+
+.title-wrap h6,
+.title-wrap .add-cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+.pr{
+  font-size: 24px;
+}
+
+.title-wrap .add-cart {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cards-data:hover .title-wrap h6 {
+  opacity: 0;
+  visibility: hidden;  transition: all .5s ease;
+
+}
+
+.cards-data:hover .title-wrap .add-cart {
+  opacity: 1;
+  visibility: visible;
+    transition: all .9s ease;
+
+}
+
+/* color dots sirf hover pe */
+.color-swatch {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.cards-data:hover .color-swatch {
+  opacity: 1;
+  visibility: visible;
+  transition: all .9s ease;
+}
+
+.color-swatch .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.add-cart{
+  font-weight: 500 !important ;
+  font-size: 16px ;
+}
+.muted{
+  font-size: 32px;
+  color: gray;
+  line-height: 1.5; 
+font-weight: 600;
+}
+.muted span{
+  color: black;
+
+}
+.offeer{
+  height: 100px;
+    width: 100px;
+    background: #111111;
+    border-radius: 50%;
+    padding-top: 22px;
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    top: -46px;
+    color: white;
+
+
+}
+.lsa{
+  letter-spacing: 3px;
+  color: red;
+font-weight: 500;
+margin-bottom: 20px;
+display: block;
+}
+#sem{
+  font-weight: bolder;
+  margin-top: 4px;
+  font-size: 20px;
+}
+/* -====insta= */
+.insta-imf {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.insta-imf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.insta-imf:hover img {
+  transform: scale(1.1);
+}
+
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  font-size: 24px;
+}
+
+.insta-imf:hover .insta-overlay {
+  opacity: 1;
+}
+/* ============ */
+.la{
+  color: red;
+font-weight: 500;
+margin-bottom: 10px;
+display: block;
+font-size: 17px;
+}
+/* = */.img-cards {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-card {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: auto !important;
+  opacity: 0;
+  border-radius: 10px;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
+}
+
+.img-cards:hover .blog-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+li{
+  margin-bottom: 9px;
+}
+.dd{
+  color: red;
+}
+#red{
+  color: red;
 }
