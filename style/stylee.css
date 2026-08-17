@@ -1,6 +1,5 @@
 a {
   text-decoration: none;
-
 }
 
 .rating {
@@ -97,7 +96,6 @@ a {
 .head {
   font-size: 34px;
   font-weight: 600 !important;
-
 }
 
 .hero-bg-img .container {
@@ -110,9 +108,6 @@ a {
   height: 100%;
   padding: 60px 0;
 }
-
-
-
 
 /* ================= */
 .banner__item {
@@ -157,7 +152,6 @@ a {
 .col-lg-5 .banner__item__text {
   padding-top: 15px;
 }
-
 
 @media (max-width: 991px) {
   .banner__item {
@@ -264,15 +258,13 @@ a {
 .cards-data:hover .title-wrap h6 {
   opacity: 0;
   visibility: hidden;
-  transition: all .5s ease;
-
+  transition: all 0.5s ease;
 }
 
 .cards-data:hover .title-wrap .add-cart {
   opacity: 1;
   visibility: visible;
-  transition: all .9s ease;
-
+  transition: all 0.9s ease;
 }
 
 /* color dots sirf hover pe */
@@ -305,7 +297,6 @@ a {
 
 .muted span {
   color: black;
-
 }
 
 .offeer {
@@ -319,8 +310,6 @@ a {
   right: 40px;
   top: -46px;
   color: white;
-
-
 }
 
 @media (max-width: 767px) {
@@ -473,7 +462,9 @@ li {
   border: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
   flex-shrink: 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .color-swatch:hover {
@@ -525,71 +516,79 @@ li {
   overflow-y: auto;
 }
 /* ================================== */
-/* / ==================================*/ 
+/* / ==================================*/
 /* ================================== */
-/* / ==================================*/ 
+/* / ==================================*/
 /* ================================== */
-/* / ==================================*/ 
+/* / ==================================*/
 .blogpost-wrapper {
   position: relative;
+  margin-bottom: 160px;
 }
 
 .blogpost-media {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .blogpost-media img {
-  transition: transform 0.4s ease;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.blogpost-media:hover img {
-  transform: scale(1.08);
-}
 
-/* Overlay card hidden by default */
+
 .blogpost-overlay {
   position: absolute;
-  bottom: 10px;
   left: 50%;
-  transform: translate(-50%, 20px);
-  width: 92%;              /* pehle 85% tha, ab zyada width */
+  bottom: -140px;
+  transform: translateX(-50%);
+ 
+   width: 75%;
+  padding: 20px 26px 22px;
   background: #fff;
-  padding: 15px 20px;      /* pehle 25px tha, ab height kam ho gayi */
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
+  padding: 22px 30px 24px;
+  text-align: left;
   z-index: 2;
-  border-radius: 4px;      /* corners rounded taake achha lage */
+  border-radius: 0;
+ 
+  transition: box-shadow 0.35s ease;
 }
 
-.blogpost-media:hover .blogpost-overlay {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, -10px);   /* -30px se -10px, kam upar jayega */
-}
+.blogpost-wrapper:hover .blogpost-overlay {
+ box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);}
 
 .blogpost-date {
-  color: #999;
+  color: #777;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .blogpost-heading {
-  font-weight: 500;
-  font-size: 17px;
-  color: #1a1a1a;
-  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #111;
+  margin: 0 0 16px;
 }
 
 .blogpost-link {
+  display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 2px;
-  color: #1a1a1a;
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  letter-spacing: 3px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 2px solid #111;
+  padding-bottom: 6px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.blogpost-wrapper:hover .blogpost-link {
+  color: #e6432f;
+  border-color: #e6432f;
 }
