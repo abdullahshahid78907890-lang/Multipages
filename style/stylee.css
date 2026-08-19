@@ -515,6 +515,7 @@ li {
 .offcanvas-body .sidebar-widget {
   overflow-y: auto;
 }
+
 /* ================================== */
 /* / ==================================*/
 /* ================================== */
@@ -547,20 +548,21 @@ li {
   left: 50%;
   bottom: -140px;
   transform: translateX(-50%);
- 
-   width: 75%;
+
+  width: 75%;
   padding: 20px 26px 22px;
   background: #fff;
   padding: 22px 30px 24px;
   text-align: left;
   z-index: 2;
   border-radius: 0;
- 
+
   transition: box-shadow 0.35s ease;
 }
 
 .blogpost-wrapper:hover .blogpost-overlay {
- box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);}
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
 
 .blogpost-date {
   color: #777;
@@ -592,17 +594,19 @@ li {
   color: #e6432f;
   border-color: #e6432f;
 }
+
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
-.contact-data p{
+.contact-data p {
   color: rgb(86, 85, 85);
   font-size: 17px;
 
 }
+
 .contact-input {
   border: 1px solid #e0e0e0;
   border-radius: 0;
@@ -631,17 +635,36 @@ li {
   background-color: #333;
   color: white;
 }
-.fst-about-card h4{
-margin-bottom: 24px;
+
+.fst-about-card h4 {
+  margin-bottom: 24px;
 }
+
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
-.testimonial-text
-{
-text-align: center;
-padding: 130px 150px 175px;
+.testimonial-text {
+  text-align: left;
+  padding: 40px 20px;
+}
+
+@media (min-width: 992px) {
+  .testimonial-text {
+    padding: 80px 60px;
+    text-align: left;
+  }
+}
+.clieent span{
+  font-weight: 22px;
+font-weight: 500;
+}
+.team-data h5{
+  margin-bottom: 0px;
+}
+.team-data span{
+  color: gray;
+  font-size: 15px;
 }

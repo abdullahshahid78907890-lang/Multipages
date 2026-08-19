@@ -112,7 +112,7 @@
     <section class="about-spad py-4 mb-4">
       <div class="container">
         <div class="about-img py-5 mt-4">
-          <img src="./images/about/about-us.jpg" alt="" />
+          <img src="./images/about/about-us.jpg" class="img-fluid" />
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6">
@@ -148,30 +148,246 @@
     <!-- ------------testomonial -->
     <section style="background-color: #f3f2ee">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row align-items-center g-4 py-5 px-3 px-lg-5">
+          <div class="col-lg-6 order-2 order-lg-1">
             <div class="testimonial-text">
-              <span class="span-icon" style="font-size: 48px; color: red;">
+              <span
+                class="span-icon"
+                style="font-size: 40px; margin-left: 100px; color: red"
+              >
                 <i class="ri-double-quotes-r"></i>
               </span>
-              <p>
+              <p style="font-size: clamp(16px, 2vw, 22px); line-height: 1.6">
                 The quality is really impressive. The fit was perfect, and the
                 overall style looked even better in person. Definitely coming
                 back for more
               </p>
-              <div class="client-imgag d-flex gap-3 " style="margin: 4px auto;">
-                <img src="./images/about/testimonial-author.jpg" class="object-fit-cover"  style="width: 50px; height:50px; border-radius: 50%;">
+              <div class="client-imgag d-flex align-items-center gap-3 mt-3">
+                <img
+                  src="./images/about/testimonial-author.jpg"
+                  class="object-fit-cover"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                  "
+                />
                 <div class="dataa">
                   <h5 class="m-0">Joseph Aleen</h5>
-
-                 <p>Fashion Designer</p>
+                  <p class="m-0">Fashion Designer</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="image">
+              <img
+                src="./images/about/testimonial-pic.jpg"
+                class="img-fluid w-100"
+                style="max-height: 500px; object-fit: cover; border-radius: 8px"
+                alt="testimonial"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ===================setction clients================ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="clieent d-flex gap-3">
+              <div class="num">
+                <h1>150</h1>
+              </div>
+              <span>
+                Our
+                <br />
+                Clients
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="clieent d-flex gap-3">
+              <div class="num">
+                <h1>40</h1>
+              </div>
+              <span>
+                Total
+                <br />
+
+                Categories
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="clieent d-flex gap-3">
+              <div class="num">
+                <h1>110</h1>
+              </div>
+              <span>
+                In
+                <br />
+                Country
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="clieent d-flex gap-3">
+              <div class="num">
+                <h1>98<i class="ri-percent-fill"></i></h1>
+              </div>
+              <span>
+                Happy
+                <br />
+                Customers
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container py-5">
+        <div class="detail-team text-center">
+          <span style="color: red; font-weight: 500; font-size: 19px"
+            >Our Team
+          </span>
+          <h3 class="fw-medium" style="font-size: 30px">Meet Our Team</h3>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="img">
+              <img src="./images/about/team-1.jpg" alt="" />
+            </div>
+            <div class="team-data mt-2">
+              <h5>John Smith</h5>
+              <span>Fashion Designer</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="img">
+              <img src="./images/about/team-2.jpg" alt="" />
+            </div>
+            <div class="team-data mt-2">
+              <h5>Cristine Wise</h5>
+              <span>C.E.O</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="img">
+              <img src="./images/about/team-3.jpg" alt="" />
+            </div>
+            <div class="team-data mt-2">
+              <h5>Sean Robin</h5>
+              <span>Manager</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="img">
+              <img src="./images/about/team-4.jpg" alt="" />
+            </div>
+            <div class="team-data mt-2">
+              <h5>Luicy Micer</h5>
+              <span>Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============================== -->
+    <section>
+      <div class="container">
+        <div class="detail-team text-center">
+          <span style="color: red; font-weight: 500; font-size: 19px"
+            >Partner</span
+          >
+          <h3 class="fw-medium" style="font-size: 30px">Happy Clients</h3>
+        </div>
+        <div class="row g-5 mt-3 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-1.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-2.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-3.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-4.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-5.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-6.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-7.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
+            <a href="#" class="mb-4 d-block">
+              <img
+                src="./images/clients/client-8.png"
+                alt="client"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <!-- baaki 6 divs bhi isi pattern mein, max-width wali style hata ke -->
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
