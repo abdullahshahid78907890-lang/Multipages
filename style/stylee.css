@@ -657,14 +657,83 @@ li {
     text-align: left;
   }
 }
-.clieent span{
-  font-weight: 22px;
-font-weight: 500;
+
+.clieent span {
+  font-weight: 24px;
+  font-weight: 500;
+  margin-top: 12px;
 }
-.team-data h5{
+
+.team-data h5 {
   margin-bottom: 0px;
 }
-.team-data span{
+
+.team-data span {
   color: gray;
   font-size: 15px;
+}
+
+.num h1 {
+  font-size: clamp(32px, 6vw, 60px) !important;
+  color: black;
+  font-weight: 600;
+}
+
+/* 
+
+*/
+.span-icon {
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  .span-icon {
+    margin-left: 40px;
+  }
+
+  /* jo bhi chahiye large screen pe */
+}
+
+.clieent {
+  justify-content: center;
+  align-items: center;
+}
+
+.clieent span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 12px;
+  text-align: left;
+}
+
+.num h1 {
+  font-size: clamp(32px, 6vw, 60px) !important;
+  color: black;
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .row.g-3.py-4 {
+    text-align: left;
+  }
+
+  .clieent {
+    justify-content: flex-start;
+  }
+}
+
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+li{
+  list-style: none;
 }
