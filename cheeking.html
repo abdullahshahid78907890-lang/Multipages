@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./style/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/stylee.css" />
+</head>
+<body>
+    
+  <header>
+      <div class="top-bar d-none d-md-block">
+        <div class="bg-dark text-light py-2">
+          <div class="container">
+            <div
+              class="container d-flex justify-content-between align-items-center"
+            >
+              <!-- Left side: contact info -->
+              <div class="d-flex gap-3">
+                <span>Free shipping, 30-day return or refund guarantee.</span>
+              </div>
+
+              <!-- Right side: social icons -->
+              <div class="d-flex gap-4">
+                <a href="#" class="text-light">SIGN IN</a>
+                <a href="#" class="text-light">FAQS</a>
+
+                <a href="#" class="text-light">USD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar start and topbar ends -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <div class="logoo">
+            <img
+              src="./images/logo.png"
+              class="img-fluid object-fit-cover"
+              alt=""
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Shoping Details</a></li>
+
+                  <li><a class="dropdown-item" href="#">Checkout</a></li>
+                  <li><a class="dropdown-item" href="">Blog Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-icons d-flex gap-3">
+              <i class="ri-search-ai-2-line"></i>
+              <i class="ri-heart-2-line"></i>
+              <i class="ri-bank-line"></i> $0.00
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section style="background-color: #f3f2ee">
+      <div class="container">
+        <div class="data-abourt-hero py-4">
+          <h3 class="fw-bold">Check Out</h3>
+          <p class="data1">
+            Home <i class="ri-arrow-right-s-line"></i> Shop
+            <i class="ri-arrow-right-s-line"></i> Check Out
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+  <div class="container">
+    <div class="checkout-notice mb-4 p-3">
+      <span style="font-size: 15px;">
+        Have a coupon? <a href="#" class="fw-medium" style="color: #c9a04a;">Click here</a> to enter your code
+      </span>
+    </div>
+
+    <div class="row g-5">
+      <!-- LEFT: BILLING DETAILS -->
+      <div class="col-lg-7">
+        <h5 class="fw-bold mb-4">Billing Details</h5>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">First Name*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">Last Name*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label" style="font-size: 14px;">Country*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label" style="font-size: 14px;">Address*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">Town/City*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">Country/State*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">Postcode / ZIP*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="font-size: 14px;">Phone*</label>
+              <input type="text" class="form-control checkout-input" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label" style="font-size: 14px;">Email*</label>
+              <input type="email" class="form-control checkout-input" required />
+            </div>
+
+            <div class="col-12 mt-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="createAccount" />
+                <label class="form-check-label fw-medium" for="createAccount" style="font-size: 15px;">
+                  Create an account?
+                </label>
+              </div>
+              <p class="text-muted mt-2" style="font-size: 13px;">
+                Create an account by entering the information below. If you are
+                a returning customer please login at the top of the page.
+              </p>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" style="font-size: 14px;">Account Password*</label>
+              <input type="password" class="form-control checkout-input" />
+            </div>
+
+            <div class="col-12 mt-4">
+              <label class="form-label fw-medium" style="font-size: 15px;">
+                Note about your order, e.g, special note for delivery
+              </label>
+              <textarea class="form-control checkout-input" rows="5" placeholder="Order notes*"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: ORDER SUMMARY -->
+      <div class="col-lg-5">
+        <div class="order-summary p-4">
+          <h5 class="fw-bold mb-4">Your Order</h5>
+
+          <div class="d-flex justify-content-between pb-3 border-bottom">
+            <span class="fw-bold" style="font-size: 13px; letter-spacing: 1px;">PRODUCT</span>
+            <span class="fw-bold" style="font-size: 13px; letter-spacing: 1px;">TOTAL</span>
+          </div>
+
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span style="font-size: 15px;">01. Vanilla salted caramel</span>
+            <span class="fw-medium" style="font-size: 15px;">$ 300.0</span>
+          </div>
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span style="font-size: 15px;">02. German chocolate</span>
+            <span class="fw-medium" style="font-size: 15px;">$ 170.0</span>
+          </div>
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span style="font-size: 15px;">03. Sweet autumn</span>
+            <span class="fw-medium" style="font-size: 15px;">$ 170.0</span>
+          </div>
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span style="font-size: 15px;">04. Gluten free mini dozen</span>
+            <span class="fw-medium" style="font-size: 15px;">$ 110.0</span>
+          </div>
+
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span class="text-muted" style="font-size: 15px;">Subtotal</span>
+            <span class="fw-medium" style="color: #c0392b;">$ 750.99</span>
+          </div>
+          <div class="d-flex justify-content-between py-3 border-bottom">
+            <span class="fw-bold" style="font-size: 15px;">Total</span>
+            <span class="fw-bold" style="color: #c0392b; font-size: 17px;">$ 750.99</span>
+          </div>
+
+          <p class="text-muted mt-3" style="font-size: 13px; line-height: 1.7;">
+            Your personal data will be used to process your order, support
+            your experience throughout this website, and for other purposes
+            described in our privacy policy.
+          </p>
+
+          <div class="mt-4">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="payment" id="checkPayment" checked />
+              <label class="form-check-label fw-medium" for="checkPayment" style="font-size: 15px;">
+                Check Payment
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="payment" id="paypalPayment" />
+              <label class="form-check-label fw-medium" for="paypalPayment" style="font-size: 15px;">
+                Paypal
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-dark w-100 py-2 fw-medium mt-2" type="button" style="letter-spacing: 1px;">
+            PLACE ORDER
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
