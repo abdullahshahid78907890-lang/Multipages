@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./style/stylee.css" />
   </head>
   <body>
+     <div id="preloader">
+    <div class="loader-circle"></div>
+  </div>
     <header>
       <div class="top-bar d-none d-md-block">
         <div class="bg-dark text-light py-2">
@@ -375,6 +378,10 @@
 
 <!-- ================================================================ -->
 <script>
+
+  // Jab page load ho jaye, preloader hata do
+  
+
   function calculateCart() {
     let total = 0;
     document.querySelectorAll(".cart-row").forEach((row) => {
@@ -407,6 +414,43 @@
    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
+</script>
+
+
+<script>
+  // Jab page load ho jaye, preloader hata do
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    if (preloader) preloader.classList.add("hide");
+  });
+
+  // Link click pe preloader dikhao phir navigate karo
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest("a");
+    if (!link) return;
+
+    const href = link.getAttribute("href");
+
+    if (
+      !href ||
+      href === "" ||
+      href.startsWith("#") ||
+      href.startsWith("http") ||
+      href.startsWith("mailto") ||
+      href.startsWith("tel") ||
+      link.hasAttribute("data-bs-toggle")
+    ) {
+      return;
+    }
+
+    e.preventDefault();
+    const preloader = document.getElementById("preloader");
+    if (preloader) preloader.classList.remove("hide");
+
+    setTimeout(function () {
+      window.location.href = href;
+    }, 400);
+  });
 </script>
   </body>
 </html>

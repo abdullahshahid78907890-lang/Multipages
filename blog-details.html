@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./style/stylee.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader-circle"></div>
+    </div>
     <header>
       <div class="top-bar d-none d-md-block">
         <div class="bg-dark text-light py-2">
@@ -99,33 +102,468 @@
       </nav>
     </header>
 
+    <!-- ===== BLOG HERO ===== -->
     <section
       class="blog-detail-hero"
-      style="background-color: #f3f2ee; height: 450px"
+      style="background-color: #f3f2ee; min-height: 350px; padding: 40px 0"
     >
       <div class="container">
         <div class="flleex text-center p-5 m-4">
           <div class="data-blog">
-            <h1 style="font-weight: 600; margin-top: 50px; font-size: 46px">
-              Are you one of the thousands of Iphone <br />
-              owners who has no idea
+            <h1
+              style="
+                font-weight: 600;
+                margin-top: 50px;
+                font-size: clamp(24px, 5vw, 46px);
+              "
+            >
+              5 Grooming Habits Every Man Should Build Into His Routine
             </h1>
           </div>
           <div
-            class="fllex d-flex gap-4 align-items-center justify-content-center"
+            class="fllex d-flex flex-wrap gap-3 gap-md-4 align-items-center justify-content-center mt-3"
           >
-            <span>By Dercreative |</span>
-            <span>February 21 2026 |</span>
+            <span>By Abdullah Shahid |</span>
+            <span>August 27, 2026 |</span>
             <span>8 Comments</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== HERO IMAGE ===== -->
+    <section>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-12">
+            <div class="images-blog-hero text-center">
+              <img
+                src="./images/blog/details/blog-details.jpg"
+                alt=""
+                class="img-fluid mx-auto d-block"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SHARE + PARAGRAPH ===== -->
+        <div class="row justify-content-center gap-5 mt-4">
+          <div class="col-lg-8">
+            <div class="data-logo d-flex flex-column flex-md-row gap-4">
+              <div class="fsst-lgo">
+                <h3>SHARE</h3>
+                <ul
+                  class="d-flex flex-wrap list-unstyled p-0 m-0"
+                  style="gap: 15px"
+                >
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgb(47, 57, 132);
+                        color: white;
+                        font-size: 30px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <i class="ri-facebook-fill"></i>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgb(95, 210, 242);
+                        color: white;
+                        font-size: 30px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <i class="ri-twitter-fill"></i>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgb(232, 62, 19);
+                        color: white;
+                        font-size: 30px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <i class="ri-youtube-fill"></i>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgb(68, 81, 184);
+                        color: white;
+                        font-size: 30px;
+                        border-radius: 50%;
+                      "
+                    >
+                      <i class="ri-linkedin-fill"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="seconf-logo flex-grow-1">
+                <p
+                  class="text"
+                  style="font-size: 18px; font-weight: 500; line-height: 1.8"
+                >
+                  A good skincare routine isn't just for women anymore — men are
+                  catching up, and for good reason. Daily exposure to sun,
+                  pollution, and stress takes a visible toll on the skin over
+                  time, showing up as dullness, fine lines, and uneven texture.
+                </p>
+                <p
+                  class="text"
+                  style="font-size: 18px; font-weight: 500; line-height: 1.8"
+                >
+                  Start with the basics: a gentle cleanser to remove dirt and
+                  excess oil, followed by a lightweight moisturizer that keeps
+                  skin hydrated without feeling greasy. Sunscreen is
+                  non-negotiable — even on cloudy days — since UV exposure is
+                  one of the leading causes of premature aging.
+                </p>
+                <p
+                  class="text"
+                  style="font-size: 18px; font-weight: 500; line-height: 1.8"
+                >
+                  Consistency matters more than complexity. Sticking to a simple
+                  routine every day will always outperform an elaborate one used
+                  only occasionally.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE + MORE PARAGRAPHS ===== -->
+    <section>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div
+            class="dataa-blog-det p-4 mt-4 rounded-2 position-relative"
+            style="
+              width: fit-content;
+              max-width: 100%;
+              background-color: rgb(228, 224, 224);
+              padding-top: 55px !important;
+            "
+          >
+            <div
+              class="quote-icon d-flex justify-content-center align-items-center position-absolute"
+              style="
+                width: 45px;
+                height: 45px;
+                background-color: #e21f1f;
+                color: white;
+                border-radius: 50%;
+                top: -22px;
+                left: 30px;
+                font-size: 18px;
+              "
+            >
+              <i class="ri-double-quotes-l"></i>
+            </div>
+            <p
+              style="
+                font-size: 19px;
+                font-weight: 600;
+                font-style: italic;
+                color: black;
+                margin: 0;
+              "
+            >
+              "Good skin isn't about using more products it's about using the
+              right ones, consistently."
+            </p>
+            <p
+              class="mt-3 mb-0 fw-bold"
+              style="font-size: 14px; color: #e21f1f; letter-spacing: 1px"
+            >
+              _ ABDULLAH SHAHID _
+            </p>
+          </div>
+        </div>
+
+        <div class="data-blog-para mt-5">
+          <p class="text-black" style="font-size: 18px; line-height: 1.8">
+            Layering fabrics the right way keeps you comfortable without
+            sacrificing style. A well-chosen base layer, paired with a
+            structured outer piece, works for both cold mornings and warmer
+            afternoons.
+          </p>
+          <p class="text-black" style="font-size: 18px; line-height: 1.8">
+            Investing in a few quality pieces always pays off more than filling
+            your closet with fast fashion. Fabrics that last, fits that flatter
+            — that's what makes an outfit feel effortless.
+          </p>
+        </div>
+
+        <!-- ===== AUTHOR + TAGS ROW ===== -->
+        <hr class="mt-5" />
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center py-4 gap-3"
+        >
+          <div class="d-flex align-items-center gap-3">
+            <img
+              src="./images/blog/details/blog-author.jpg"
+              alt="author"
+              class="rounded-circle"
+              style="width: 50px; height: 50px; object-fit: cover"
+            />
+            <h6 class="fw-bold m-0">Abdullah Shahid</h6>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="text-dark fw-medium text-decoration-none"
+              >#Fashion</a
+            >
+            <a href="#" class="text-dark fw-medium text-decoration-none"
+              >#Grooming</a
+            >
+            <a href="#" class="text-dark fw-medium text-decoration-none"
+              >#2026</a
+            >
+          </div>
+        </div>
+
+        <!-- ===== PREVIOUS / NEXT ===== -->
+        <div class="row g-3 mb-5">
+          <div class="col-md-6">
+            <a
+              href="#"
+              class="pod-nav-card d-block text-decoration-none shadow-sm"
+            >
+              <span
+                class="d-flex align-items-center gap-2 text-muted mb-2"
+                style="font-size: 13px"
+              >
+                <i class="ri-arrow-left-line"></i> Previous Pod
+              </span>
+              <h6 class="fw-bold text-dark m-0" style="font-size: 17px">
+                5 Wardrobe Essentials Every Man Should Own
+              </h6>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a
+              href="#"
+              class="pod-nav-card d-block text-decoration-none text-md-end shadow-sm"
+            >
+              <span
+                class="d-flex align-items-center justify-content-md-end gap-2 text-muted mb-2"
+                style="font-size: 13px"
+              >
+                Next Pod <i class="ri-arrow-right-line"></i>
+              </span>
+              <h6 class="fw-bold text-dark m-0" style="font-size: 17px">
+                How To Layer Jackets For Cold Weather Without Bulk
+              </h6>
+            </a>
+          </div>
+        </div>
+
+        <!-- ===== LEAVE A COMMENT ===== -->
+        <div class="text-center mb-4">
+          <h4 class="fw-bold">Leave A Comment</h4>
+        </div>
+
+        <form class="mx-auto" style="max-width: 900px">
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control comment-input"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-md-4">
+              <input
+                type="email"
+                class="form-control comment-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control comment-input"
+                placeholder="Phone"
+              />
+            </div>
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="form-control comment-input"
+              rows="6"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <div class="text-center mb-3">
+            <button
+              class="btn btn-dark px-5 py-2 fw-medium"
+              type="button"
+              style="letter-spacing: 1px"
+            >
+              POST COMMENT
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-5" style="background-color: #111111; color: #b7b7b7">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="foot-fsst">
+              <img
+                src="./images/footer-logo.png"
+                alt=""
+                style="margin-bottom: 30px"
+              />
+            </div>
+            <p class="mb-4">
+              Timeless style,modern comfort. We craft pieces that move with your
+              everyday life quality first, always.
+            </p>
+            <a href="">
+              <img src="./images/payment.png" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="send">
+              <h5 class="ms-4 mb-4 text-white">Shopping</h5>
+              <ul
+                style="
+                  list-style: none;
+                  font-size: 17 px;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+              >
+                <li cl>Clothing Store</li>
+                <li>Trending Shoes</li>
+                <li>Assesories</li>
+                <li>Sales</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="send">
+              <h5 class="ms-4 mb-4 text-white">Shopping</h5>
+              <ul
+                style="
+                  list-style: none;
+                  font-size: 17 px;
+                  margin-bottom: 8px;
+                  display: block;
+                "
+              >
+                <li cl>Contact Us</li>
+                <li>Payment Method</li>
+                <li>Delivery</li>
+                <li>Return & Exchange</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h5 class="text-white">NEWLETTER</h5>
+            <p>
+              Be the first to know about new arrivals, look books, sales &
+              promos!
+            </p>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                placeholder="enter your email"
+                style="
+                  background-color: #111111;
+                  border: 1px solid rgb(92, 90, 90);
+                "
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="addres text-center">
+          <p>
+            Copyright &copy;2026 All rights reserved | This template is made
+            with <i class="ri-service-fill dd"></i> by
+            <span id="red">Abdullah Shahid</span>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Jab page load ho jaye, preloader hata do
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        if (preloader) preloader.classList.add("hide");
+      });
+
+      // Link click pe preloader dikhao phir navigate karo
+      document.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (!link) return;
+
+        const href = link.getAttribute("href");
+
+        if (
+          !href ||
+          href === "" ||
+          href.startsWith("#") ||
+          href.startsWith("http") ||
+          href.startsWith("mailto") ||
+          href.startsWith("tel") ||
+          link.hasAttribute("data-bs-toggle")
+        ) {
+          return;
+        }
+
+        e.preventDefault();
+        const preloader = document.getElementById("preloader");
+        if (preloader) preloader.classList.remove("hide");
+
+        setTimeout(function () {
+          window.location.href = href;
+        }, 400);
+      });
+    </script>
   </body>
 </html>
